@@ -1,0 +1,8 @@
+kind: pipeline
+name: default
+
+steps:
+- name: java
+  image: openjdk:8-jdk
+  commands:
+  - mvn sonar:sonar -Dsonar.projectKey=siegfried-ehret-sonarsource_sq-com_example_java-maven-travis -Dsonar.organization=siegfried-ehret-sonarsource-github -Dsonar.host.url=https://sieg.eu.ngrok.io -Dsonar.login=510f0245f8274608954c0bec628ff3e97065a23e
