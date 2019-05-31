@@ -1,0 +1,5 @@
+container:
+  image: maven:3.6.1-jdk-8
+
+check_task:
+  test_script: mvn sonar:sonar -Dsonar.projectKey=siegfried-ehret-sonarsource_sq-com_example_java-maven-travis -Dsonar.organization=siegfried-ehret-sonarsource-github -Dsonar.host.url=https://sieg.eu.ngrok.io -Dsonar.login=510f0245f8274608954c0bec628ff3e97065a23e
