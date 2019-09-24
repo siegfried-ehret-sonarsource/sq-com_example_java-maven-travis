@@ -6,8 +6,8 @@ jobs:
     steps:
       - checkout
       - run:
-        name: run-maven
-        command: mvn sonar:sonar -Dsonar.projectKey=siegfried-ehret-sonarsource_svelte-private -Dsonar.organization=siegfried-ehret-sonarsource -Dsonar.host.url=https://sieg.eu.ngrok.io
+          name: run-maven
+          command: mvn sonar:sonar -Dsonar.projectKey=siegfried-ehret-sonarsource_svelte-private -Dsonar.organization=siegfried-ehret-sonarsource -Dsonar.host.url=https://sieg.eu.ngrok.io
 
 workflows:
   version: 2
